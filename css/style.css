@@ -1,0 +1,255 @@
+ /* ===================================
+   GOOGLE FONTS & RESET
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:#333;
+    background:#ffffff;
+    line-height:1.7;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ===================================
+   BUTTONS
+=================================== */
+
+.btn{
+    display:inline-block;
+    background:#d4af37;
+    color:#fff;
+    padding:14px 30px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#b89328;
+    transform:translateY(-3px);
+}
+
+.btn-outline{
+    display:inline-block;
+    border:2px solid #fff;
+    color:#fff;
+    padding:14px 30px;
+    border-radius:50px;
+    margin-left:15px;
+    transition:.3s;
+}
+
+.btn-outline:hover{
+    background:#fff;
+    color:#0d3b66;
+}
+
+/* ===================================
+   HEADER
+=================================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#ffffff;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:90px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:70px;
+    height:70px;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+.logo h2{
+    color:#0d3b66;
+    font-size:1.4rem;
+    font-family:'Playfair Display',serif;
+}
+
+.logo p{
+    color:#666;
+    font-size:.9rem;
+}
+
+nav ul{
+    display:flex;
+    gap:35px;
+}
+
+nav a{
+    color:#222;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover,
+nav a.active{
+    color:#d4af37;
+}
+
+/* ===================================
+   HERO
+=================================== */
+
+.hero{
+    position:relative;
+    min-height:100vh;
+    background:linear-gradient(rgba(8,36,73,.85),rgba(8,36,73,.85)),
+    url("../images/hero.jpg") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    padding-top:90px;
+    overflow:hidden;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.15);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-text h4{
+    color:#d4af37;
+    letter-spacing:3px;
+    margin-bottom:15px;
+}
+
+.hero-text h1{
+    font-family:'Playfair Display',serif;
+    color:#fff;
+    font-size:3.8rem;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-text h3{
+    color:#f6d76d;
+    font-size:1.6rem;
+    margin-bottom:25px;
+    font-weight:600;
+}
+
+.hero-text p{
+    color:#f4f4f4;
+    font-size:1.05rem;
+    margin-bottom:40px;
+    max-width:650px;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.hero-image{
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:420px;
+    height:520px;
+    object-fit:cover;
+    border-radius:20px;
+    border:8px solid rgba(255,255,255,.2);
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+    animation:float 4s ease-in-out infinite;
+}
+
+/* ===================================
+   ANIMATIONS
+=================================== */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.hero-text{
+    animation:fadeUp 1s ease;
+}
+
+.hero-image{
+    animation:fadeUp 1.2s ease;
+}
