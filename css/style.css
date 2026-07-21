@@ -253,3 +253,705 @@ nav a.active{
 .hero-image{
     animation:fadeUp 1.2s ease;
 }
+/* ===================================
+   SECTION SPACING
+=================================== */
+
+section{
+    padding:100px 0;
+}
+
+section h2{
+    font-family:'Playfair Display',serif;
+}
+
+/* ===================================
+   WELCOME SECTION
+=================================== */
+
+.welcome{
+    background:#ffffff;
+    text-align:center;
+}
+
+.welcome h2{
+    font-size:2.6rem;
+    color:#0d3b66;
+    margin-bottom:25px;
+}
+
+.welcome p{
+    max-width:850px;
+    margin:auto;
+    font-size:1.1rem;
+    color:#666;
+    line-height:1.9;
+}
+
+/* ===================================
+   ABOUT PREVIEW
+=================================== */
+
+.about-preview{
+    background:#f8f9fc;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.about-grid img{
+    width:100%;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.about-grid h5{
+    color:#d4af37;
+    letter-spacing:2px;
+    margin-bottom:15px;
+    text-transform:uppercase;
+}
+
+.about-grid h2{
+    font-size:2.5rem;
+    color:#0d3b66;
+    margin-bottom:10px;
+}
+
+.about-grid h4{
+    color:#555;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+.about-grid p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:35px;
+}
+
+/* ===================================
+   MINISTRIES
+=================================== */
+
+.ministries{
+    background:#ffffff;
+    text-align:center;
+}
+
+.ministries h2{
+    color:#0d3b66;
+    font-size:2.6rem;
+    margin-bottom:60px;
+}
+
+.ministry-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:40px 30px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.card h3{
+    color:#0d3b66;
+    margin-bottom:18px;
+    font-size:1.35rem;
+}
+
+.card p{
+    color:#666;
+    line-height:1.8;
+}
+
+/* ===================================
+   FEATURED BOOKS
+=================================== */
+
+.featured-books{
+    background:#f5f7fb;
+    text-align:center;
+}
+
+.featured-books h2{
+    color:#0d3b66;
+    font-size:2.6rem;
+    margin-bottom:15px;
+}
+
+.featured-books > .container > p{
+    max-width:700px;
+    margin:0 auto 50px;
+    color:#666;
+    font-size:1.05rem;
+}
+
+.books-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+    margin-bottom:50px;
+}
+
+.books-grid img{
+    width:100%;
+    border-radius:12px;
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+    transition:.35s;
+    cursor:pointer;
+}
+
+.books-grid img:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 20px 40px rgba(0,0,0,.22);
+}
+
+/* ===================================
+   GENERAL HOVER EFFECTS
+=================================== */
+
+.card,
+.books-grid img,
+.about-grid img{
+    transition:all .35s ease;
+}
+
+.about-grid img:hover{
+    transform:scale(1.02);
+}
+
+section h2{
+    margin-bottom:20px;
+}
+/* ===================================
+   SCRIPTURE SECTION
+=================================== */
+
+.scripture{
+    background:linear-gradient(rgba(13,59,102,.92),rgba(13,59,102,.92)),
+    url("../images/hero.jpg") center/cover no-repeat;
+    color:#fff;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.scripture h2{
+    font-family:'Playfair Display',serif;
+    font-size:2.4rem;
+    max-width:900px;
+    margin:auto;
+    line-height:1.5;
+    color:#fff;
+}
+
+.scripture p{
+    margin-top:25px;
+    font-size:1.2rem;
+    color:#d4af37;
+    font-weight:600;
+}
+
+/* ===================================
+   CONTACT PREVIEW
+=================================== */
+
+.contact-preview{
+    background:#ffffff;
+    text-align:center;
+}
+
+.contact-preview h2{
+    color:#0d3b66;
+    font-size:2.6rem;
+    margin-bottom:25px;
+}
+
+.contact-preview p{
+    color:#666;
+    font-size:1.1rem;
+    margin-bottom:18px;
+    line-height:1.9;
+}
+
+.contact-preview .btn{
+    margin-top:25px;
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+footer{
+    background:#081f3d;
+    color:#ddd;
+    text-align:center;
+    padding:70px 20px;
+}
+
+footer h2{
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+footer p{
+    max-width:800px;
+    margin:12px auto;
+    color:#cfcfcf;
+    line-height:1.8;
+}
+
+footer a{
+    color:#d4af37;
+    transition:.3s;
+}
+
+footer a:hover{
+    color:#fff;
+}
+
+/* ===================================
+   SMALL UTILITIES
+=================================== */
+
+.text-center{
+    text-align:center;
+}
+
+.mt-20{
+    margin-top:20px;
+}
+
+.mt-30{
+    margin-top:30px;
+}
+
+.mt-40{
+    margin-top:40px;
+}
+
+.mb-20{
+    margin-bottom:20px;
+}
+
+.mb-30{
+    margin-bottom:30px;
+}
+
+.mb-40{
+    margin-bottom:40px;
+}
+
+/* ===================================
+   SCROLLBAR
+=================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f2f2f2;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#d4af37;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#b89328;
+}
+
+/* ===================================
+   SELECTION
+=================================== */
+
+::selection{
+    background:#d4af37;
+    color:#fff;
+}
+
+/* ===================================
+   SMOOTH TRANSITIONS
+=================================== */
+
+button,
+a,
+img,
+.card{
+    transition:all .35s ease;
+}
+
+/* ===================================
+   SHADOW HELPERS
+=================================== */
+
+.shadow{
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.rounded{
+    border-radius:15px;
+}
+/* ===================================
+   RESPONSIVE DESIGN
+=================================== */
+
+/* Tablets */
+
+@media (max-width:992px){
+
+.hero-content{
+grid-template-columns:1fr;
+text-align:center;
+gap:50px;
+}
+
+.hero-text p{
+margin:auto;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+.hero-image img{
+width:350px;
+height:450px;
+}
+
+.about-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.about-grid img{
+max-width:450px;
+margin:auto;
+}
+
+.nav-container{
+flex-direction:column;
+height:auto;
+padding:20px 0;
+}
+
+nav ul{
+margin-top:20px;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.logo{
+justify-content:center;
+}
+
+}
+
+
+/* Mobile */
+
+@media (max-width:768px){
+
+section{
+padding:70px 0;
+}
+
+.hero{
+padding-top:140px;
+min-height:auto;
+}
+
+.hero-text h1{
+font-size:2.4rem;
+}
+
+.hero-text h3{
+font-size:1.3rem;
+}
+
+.hero-text p{
+font-size:1rem;
+}
+
+.hero-image img{
+width:280px;
+height:360px;
+}
+
+.btn,
+.btn-outline{
+
+display:block;
+
+width:220px;
+
+margin:10px auto;
+
+text-align:center;
+
+}
+
+.welcome h2,
+.ministries h2,
+.featured-books h2,
+.contact-preview h2{
+
+font-size:2rem;
+
+}
+
+.about-grid h2{
+
+font-size:2rem;
+
+}
+
+.scripture h2{
+
+font-size:1.8rem;
+
+}
+
+.books-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+}
+
+.card{
+
+padding:30px 20px;
+
+}
+
+.logo img{
+
+width:55px;
+
+height:55px;
+
+}
+
+.logo h2{
+
+font-size:1.2rem;
+
+}
+
+.logo p{
+
+font-size:.8rem;
+
+}
+
+nav ul{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+header{
+
+position:relative;
+
+}
+
+}
+
+
+/* Small Phones */
+
+@media (max-width:480px){
+
+.hero-text h1{
+
+font-size:2rem;
+
+}
+
+.hero-text h3{
+
+font-size:1.1rem;
+
+}
+
+.hero-image img{
+
+width:230px;
+
+height:300px;
+
+}
+
+.books-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.container{
+
+width:92%;
+
+}
+
+.scripture h2{
+
+font-size:1.5rem;
+
+}
+
+footer h2{
+
+font-size:1.5rem;
+
+}
+
+}
+
+
+/* ===================================
+   BACK TO TOP BUTTON
+=================================== */
+
+#topBtn{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+background:#d4af37;
+
+color:white;
+
+width:50px;
+
+height:50px;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:22px;
+
+cursor:pointer;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+transition:.3s;
+
+z-index:999;
+
+}
+
+#topBtn:hover{
+
+background:#0d3b66;
+
+transform:translateY(-5px);
+
+}
+
+
+/* ===================================
+   FADE ANIMATION
+=================================== */
+
+.fade-in{
+
+opacity:0;
+
+transform:translateY(50px);
+
+animation:fadeIn 1s forwards;
+
+}
+
+@keyframes fadeIn{
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/* ===================================
+   IMAGE HOVER EFFECT
+=================================== */
+
+img{
+
+transition:.4s;
+
+}
+
+img:hover{
+
+transform:scale(1.02);
+
+}
+
+
+/* ===================================
+   CARD HOVER
+=================================== */
+
+.card:hover{
+
+border-bottom:5px solid #d4af37;
+
+}
+
+
+/* ===================================
+   FOOTER COPYRIGHT
+=================================== */
+
+footer p:last-child{
+
+margin-top:30px;
+
+font-size:.9rem;
+
+opacity:.8;
+
+}
+
+
+/* ===================================
+   END OF STYLE.CSS
+=================================== */
