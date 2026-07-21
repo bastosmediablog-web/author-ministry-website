@@ -955,3 +955,82 @@ opacity:.8;
 /* ===================================
    END OF STYLE.CSS
 =================================== */
+/* ===========================
+   PROFESSIONAL BOOK CARDS
+=========================== */
+
+.book-card{
+
+background:#fff;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+transition:.4s;
+
+padding-bottom:30px;
+
+}
+
+.book-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 20px 45px rgba(0,0,0,.18);
+
+}
+
+.book-card img{
+
+width:100%;
+
+height:320px;
+
+object-fit:cover;
+
+}
+
+.book-card h3{
+
+margin:25px 20px 15px;
+
+color:#0d3b66;
+
+font-size:1.3rem;
+
+font-family:'Playfair Display',serif;
+
+}
+
+.book-card p{
+
+margin:0 20px 25px;
+
+color:#666;
+
+font-size:.95rem;
+
+line-height:1.8;
+
+}
+
+.book-card .btn{
+
+margin-left:20px;
+
+}
+
+.featured-books h5{
+
+color:#d4af37;
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+
+margin-bottom:10px;
+
+}
