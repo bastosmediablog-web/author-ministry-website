@@ -442,3 +442,78 @@ font-size:22px;
 color:#d4af37;
 
 }
+/*=====================
+BOOKS PAGE
+=====================*/
+
+.books-page{
+
+background:#f7f8fc;
+
+}
+
+.book-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:35px;
+
+}
+
+.book-card{
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+text-align:center;
+
+transition:.35s;
+
+}
+
+.book-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.book-card img{
+
+width:220px;
+
+height:320px;
+
+object-fit:cover;
+
+margin:auto;
+
+border-radius:12px;
+
+margin-bottom:20px;
+
+}
+
+.book-card h3{
+
+font-family:'Playfair Display',serif;
+
+font-size:28px;
+
+color:#162d8f;
+
+margin-bottom:15px;
+
+}
+
+.book-card p{
+
+margin-bottom:25px;
+
+}
