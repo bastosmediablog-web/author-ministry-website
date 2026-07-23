@@ -1288,8 +1288,8 @@ width:220px;
 
 .book-card img{
     width:100%;
-    height:420px;
-    object-fit:cover;
+    height:300px;
+     object-fit: contain;
 }
 
 .book-card h3{
